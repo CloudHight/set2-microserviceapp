@@ -28,7 +28,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: stephenadmin/emailservice:1
+        image: olasunkanmi12/emailservice:1
         ports:
         - containerPort: 8080
         env:
@@ -81,7 +81,7 @@ spec:
       serviceAccountName: default
       containers:
         - name: server
-          image: stephenadmin/checkoutservice:1
+          image: olasunkanmi12/checkoutservice:1
           ports:
           - containerPort: 5050
           readinessProbe:
@@ -143,7 +143,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: stephenadmin/recommendationservice:1
+        image: olasunkanmi12/recommendationservice:1
         ports:
         - containerPort: 8080
         readinessProbe:
@@ -200,7 +200,7 @@ spec:
       serviceAccountName: default
       containers:
         - name: server
-          image: stephenadmin/frontend:1
+          image: olasunkanmi12/frontend:1
           ports:
           - containerPort: 8080
           readinessProbe:
@@ -297,7 +297,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: stephenadmin/paymentservice:1
+        image: olasunkanmi12/paymentservice:1
         ports:
         - containerPort: 50051
         env:
@@ -349,7 +349,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: stephenadmin/productcatalogservice:2
+        image: olasunkanmi12/productcatalogservice:2
         ports:
         - containerPort: 3550
         env:
@@ -401,7 +401,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: stephenadmin/cartservice:1
+        image: olasunkanmi12/cartservice:1
         ports:
         - containerPort: 7070
         env:
@@ -465,7 +465,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: stephenadmin/loadgenerator:1
+        image: olasunkanmi12/loadgenerator:1
         env:
         - name: FRONTEND_ADDR
           value: "frontend:80"
@@ -496,7 +496,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: stephenadmin/currencyservice:1
+        image: olasunkanmi12/currencyservice:1
         ports:
         - name: grpc
           containerPort: 7000
@@ -548,7 +548,7 @@ spec:
       serviceAccountName: default
       containers:
       - name: server
-        image: stephenadmin/shippingservice:3
+        image: olasunkanmi12/shippingservice:3
         ports:
         - containerPort: 50051
         env:

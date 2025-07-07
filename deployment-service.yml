@@ -297,7 +297,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: olasunkanmi12/paymentservice:1
+        image: olasunkanmi12/paymentservice:2
         ports:
         - containerPort: 50051
         env:

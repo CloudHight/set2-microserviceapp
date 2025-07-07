@@ -465,7 +465,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: olasunkanmi12/loadgenerator:1
+        image: olasunkanmi12/loadgenerator:2
         env:
         - name: FRONTEND_ADDR
           value: "frontend:80"

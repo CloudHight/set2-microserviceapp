@@ -1,14 +1,14 @@
 pipeline {
     agent any
     environment {
-        APP_REPO_NAME = "set1-microserviceapp"
-        IMAGE_NAME = "franklinonyia/productcatalog"
+        APP_REPO_NAME = "set2-microserviceapp"
+        IMAGE_NAME = "olasunkanmi12/productcatalog"
         BUILD_TAG = "${BUILD_NUMBER}"
         DEPLOYMENT_MANIFEST = "deployment-service.yml"
-        GIT_REPO_URL = "https://github.com/CloudHight/set1-microserviceapp.git"
+        GIT_REPO_URL = "https://github.com/CloudHight/set2-microserviceapp.git"
         STAGE_BRANCH = "stage"
         MAIN_BRANCH = "main"
-        SLACK_CHANNEL = "#16th-june-ecommerce-project-using-kops-eu-team1"
+        SLACK_CHANNEL = "#16th-june-ecommerce-project-using-kops-eu-team2"
     }
     
     stages {

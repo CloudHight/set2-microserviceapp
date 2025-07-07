@@ -349,7 +349,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: olasunkanmi12/productcatalogservice:2
+        image: olasunkanmi12/productcatalogservice:3
         ports:
         - containerPort: 3550
         env:

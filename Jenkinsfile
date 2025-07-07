@@ -38,7 +38,7 @@ pipeline {
                     withCredentials([usernamePassword(credentialsId: 'git-cred', usernameVariable: 'GIT_USERNAME', passwordVariable: 'GIT_TOKEN')]) {
                         sh """
                             rm -rf ${APP_REPO_NAME} || true
-                            git clone ${GIT_REPO_URL}
+                            git clone https://${GIT_USERNAME}:${GIT_TOKEN}@${GIT_REPO_URL.replace('https://', '')}
                             cd ${APP_REPO_NAME}
                             git config --global user.email "jenkins@set30.space"
                             git config --global user.name "Jenkins CI"

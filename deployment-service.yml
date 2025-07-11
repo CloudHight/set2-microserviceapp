@@ -28,7 +28,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: olasunkanmi12/emailservice:2
+        image: olasunkanmi12/emailservice:1
         ports:
         - containerPort: 8080
         env:

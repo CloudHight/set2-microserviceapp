@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
         APP_REPO_NAME = "set2-microserviceapp"
-        IMAGE_NAME = "olasunkanmi12/cartservice"
+        IMAGE_NAME = "franklinonyia/cartservice"
         BUILD_TAG = "${BUILD_NUMBER}"
         DEPLOYMENT_MANIFEST = "deployment-service.yml"
         GIT_REPO_URL = "https://github.com/CloudHight/set2-microserviceapp.git"
